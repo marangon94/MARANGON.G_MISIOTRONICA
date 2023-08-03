@@ -1,0 +1,100 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 10px;
+}
+
+.navegacion {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+a.navegacion:hover {
+    background-color: #555;
+}
+
+.logonavbar {
+    height:25px; 
+}
+
+nav .icon{
+    display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: rgb(247, 173, 15);
+  padding: auto;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(247, 173, 15);
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+  .navegacion {
+    display: none;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .dropdown {
+    display: block;
+    position: relative;
+    left: calc(100vw - 9rem);
+  }
+}
+
+button {
+  color: black;
+  background-color: rgb(247, 173, 15);
+}

@@ -1,0 +1,40 @@
+.barraBusqueda {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -25px;
+}
+
+.barraBusqueda h1 {
+    text-align: center;
+}
+
+input[type='text']{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.results-list {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+.results-list li {
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.no-results {
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+}

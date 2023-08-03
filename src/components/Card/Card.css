@@ -1,0 +1,30 @@
+.card {
+    border: 1px solid rgb(247, 173, 15);
+    padding: 5%;
+    border-radius: 8px;
+    margin: 5%;
+}
+
+.card img {
+    height: auto;
+
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.descripcion-item {
+    display: flex;
+    justify-content: start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.precio-item{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    font-style: bold;
+}
