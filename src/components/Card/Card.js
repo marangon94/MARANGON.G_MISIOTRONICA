@@ -4,15 +4,10 @@ import './Card.css';
 const Card = ({ image, title, description, precio }) => {
 
   const [isClicked, setIsClicked] = useState(false);
-  const [isFocus, setIsZoom] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
-  }
-
-  const handleFocus = () => {
-    setIsZoom(true);
   }
 
   const handleMouseTrue = () => {
@@ -28,17 +23,19 @@ const Card = ({ image, title, description, precio }) => {
   }
 
   const imageStyle = {
-    width: isHovered ? '100%' : '80%'
+    width: isHovered ? '130%' : '80%'
   }
 
   return (
     <div className="card" onClick={handleClick} style={cardStyle}>
-      <div onMouseEnter={handleMouseTrue} onMouseLeave={handleMouseFalse} onFocus={handleFocus}>
+      <div onMouseEnter={handleMouseTrue} onMouseLeave={handleMouseFalse} className="cardimage">
         <img src={image} alt="Card" style={imageStyle}/>
       </div>
+      <div className="carddata">
       <h4>{title}</h4>
       <p className="descripcion-item">{description}</p>
       <p className="precio-item">{precio}</p>
+      </div>
     </div>
   );
 };
