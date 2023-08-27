@@ -1,6 +1,5 @@
 import './NavBar.css';
 import logo192M1 from '../../assets/logo512M1.png'
-import React, {useState} from 'react';
 
 
 const NavBar = () => {

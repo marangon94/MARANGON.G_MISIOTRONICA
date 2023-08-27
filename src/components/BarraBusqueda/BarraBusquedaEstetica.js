@@ -1,10 +1,9 @@
 import './BarraBusqueda.css';
 import React, { useState } from "react";
-import Catalogo from '../../catalogo/catalogo.js';
 
 const BarraBusquedaEstetica = () => {
 
-    const [busqueda, setBusqueda] = useState('');
+    const [busqueda] = useState('');
 
     return (
         <div className="barraBusqueda">
